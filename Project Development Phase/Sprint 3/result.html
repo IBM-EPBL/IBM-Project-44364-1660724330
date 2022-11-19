@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crop-Recommendation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+      *{box-sizing: border-box;}
+      a{text-decoration: none;color: #000;}
+      ul{list-style: none;text-align: right;padding-right: 20px;}
+      .mainForm{background-color: cadetblue;width: 100%;height: 100vh;}
+      .menu{background-color: aliceblue;color: #000;height: 50px;width: 100%;margin-bottom: 80px;}
+      li{display: inline-block;margin: 8px 10px;padding: 5px;}
+      p{margin-top: 30px;text-align: center;}
+      li:hover{background-color: cadetblue;border-radius: 5px;}
+      li:hover a{color: #fff;}
+      .mainBody{text-align: center;margin-top: 200px;}
+      .row1{display: flex;justify-content: space-between;border-bottom: 1px solid;padding-bottom: 20px;
+        margin-bottom: 30px;}
+      button{display: inline-block;margin: 0 30px;width: 120px;height: 35px;border-radius: 20px;border: none;}
+      .mainTable{margin-top: 30px;}
+      button:hover{border: 2px solid #fff;background-color: #1e4d4e;color: #fff;font-weight: bold;}
+  </style>
+</html>
+<body>
+
+<div class="mainForm">
+    <div class="menu">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/predict">Use Case</a></li>
+            <li><a href="/analysis">Analysis</a></li>
+            <li><a href="/real">Realtime Prediction</a></li>
+        </ul>
+    </div>
+    <div class="mainTable">
+        <div class="container">
+            {% for name in probab %}
+                <div class="row1" action="/paddy" method="POST">
+                    <h4>{{name}}</h4>
+                    <div class="tableBtn">
+                        <a href="{{name}}-details"><button>View Details</button></a>
+                        <a href="/{{name}}-disease"><button>Disease</button></a>
+                        <a href="/{{name}}-fertilizer"><button>Fertilizer</button></a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crop-Recommendation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+      *{box-sizing: border-box;}
+      a{text-decoration: none;color: #000;}
+      ul{list-style: none;text-align: right;padding-right: 20px;}
+      .mainForm{background-color: cadetblue;width: 100%;height: 100vh;}
+      .menu{background-color: aliceblue;color: #000;height: 50px;width: 100%;}
+      li{display: inline-block;margin: 8px 10px;padding: 5px;}
+      li:hover{background-color: cadetblue;border-radius: 5px;}
+      li:hover a{color: #fff;}
+      .mainBody{text-align: center;margin-top: 200px;}
+      .formTit{text-align: center;margin: 30px 0;}
+      .row1{display: flex;height: 140px;text-align: center;border-bottom: 1px solid;background-color: #ededed;}
+      img{height: 100%;width: 100%;}
+      .disI{height: 130px;width: 190px;overflow: hidden;padding: 10px;}
+      .disN{width: 500px;margin: auto;}
+      .medD{margin-left: 20px;margin: auto;width: 950px;padding: 10px;}
+      .row{background-color: darkgrey;width: 100%;margin: auto;height: 50px;padding-top: 10px;}
+      .c-1{width: 345px;text-align: center;}
+      .c-2{width: 130px;text-align: center;}
+      .c-3{width: 600px;text-align: center;}
+      
+      
+  </style>
+</html>
+<body>
+
+<div class="mainForm">
+    <div class="menu">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/predict">Use Case</a></li>
+            <li><a href="#">Analysis</a></li>
+            <li><a href="#">Realtime Prediction</a></li>
+        </ul>
+    </div>
+    <div class="formTit">
+        <h3>MANGO - Disease Details</h3>
+    </div>
+    <div class="container">
+        <div class="cropTable">
+            <div class="row">
+                <div class="c-1">
+                    <p>Disease Name</p>
+                </div>
+                <div class="c-2">
+                    <p>Disease Image</p>
+                </div>
+                <div class="c-3">
+                    <p>Medicine Details</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="disN">
+                    <p>Anthracnos</p>
+                </div>
+                <div class="disI">
+                    <img src="static/img/mango-dis-1.jpg" alt="">
+                </div>
+                <div class="medD">
+                    <p>Spray with mancozeb (800 g/kg at 2 g/L) weekly during flowering and then monthly until harvest. Stop spraying 14 days before harvest. During dry weather, flower sprays may be reduced to fortnightly intervals.
+                        Should rain occur during flowering, apply prochloraz (462 g/kg) (Octave, registered trade mark), using 1 g product/L in a tank mix with mancozeb. Prochloraz only needs to be applied every 3-4 weeks.</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="disN">
+                    <p>Mango malformation</p>
+                </div>
+                <div class="disI">
+                    <img src="static/img/mango-dis-2.jpg" alt="">
+                </div>
+                <div class="medD">
+                    <p>Incidence reduced by spraying 100-200ppm NAA during October.
+                        Pruning of diseased parts along the basal 15-20 cm apparently healthy portions.
+                        This is followed by the spraying of Carbendazim (0.1%) or Captafol (0.2%).</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="disN">
+                    <p>Sooty mould</p>
+                </div>
+                <div class="disI">
+                    <img src="static/img/mango-dis-3.jpg" alt="">
+                </div>
+                <div class="medD">
+                    <p>Controlling of insect by spraying systemic insecticides like Monocrotophos or methyl dematon
+                        After that spray starch solution (1kg Starch/Maida in 5 litres of water. Boiled and dilute to 20 liters)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

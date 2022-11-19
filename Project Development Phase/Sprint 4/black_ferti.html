@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Crop-Recommendation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+      *{box-sizing: border-box;}
+      a{text-decoration: none;color: #000;}
+      ul{list-style: none;text-align: right;padding-right: 20px;}
+      .mainForm{background-color: cadetblue;width: 100%;height: 100vh;}
+      .menu{background-color: aliceblue;color: #000;height: 50px;width: 100%;}
+      li{display: inline-block;margin: 8px 10px;padding: 5px;}
+      p{margin-top: 30px;text-align: center;}
+      li:hover{background-color: cadetblue;border-radius: 5px;}
+      li:hover a{color: #fff;}
+      .mainBody{text-align: center;margin-top: 200px;}
+      .formTit{text-align: center;margin: 30px 0;}
+      .formSec{display: flex;justify-content: space-between;margin-top: 90px;}
+      .cropImg{width: 40%;overflow: hidden;border-radius: 5px;height:300px;text-align: center;}
+      img{height: 100%;}
+      .cropDetail{width: 40%;font-size: 18px;margin: auto;font-weight: bold;}
+  </style>
+</html>
+<body>
+
+<div class="mainForm">
+    <div class="menu">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/predict">Use Case</a></li>
+            <li><a href="#">Analysis</a></li>
+            <li><a href="#">Realtime Prediction</a></li>
+        </ul>
+    </div>
+    <div class="formTit">
+        <h3>BLACKGRAM - Fertilizer Details</h3>
+    </div>
+    <div class="container formSec">
+        <div class="cropImg">
+            <img src="static/img/black-ferti.jpg" alt="">
+        </div>
+        <div class="cropDetail">
+            <p>Foliar spray of 1% urea for yield improvement in black gram.
+                Foliar spraying of 2% KCl + 100 ppm Boron during dry spell as mid season management practice in black gram during Rabi season is recommended to increase the yield over KCl spray alone 
+                Seed coating with biofertilizers and micronutrients viz., Zn, Mo & Co @ 4, 1, 0.5 g/kg of seed is recommended.
+                50 per cent nitrogen can be substituted through organic source (850 kg of vermicompost per hectare). Lime application is recommended for pulses with soil pH less than 6.0. </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
